@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+div#interface {
+    font-family: 'Overlock', cursive;
+    background-color: #f2f2f2;
+}
+
+/*------------ Cabecalho ------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div#topo {
+    width: 100%;
+    height: 241px;
+    background-color: #8adcf1;
+    box-shadow: 1px 1px 4px black;
+    position: absolute;
+    top: 0px;
+}
+
+div#menu {
+    width: 980px;
+    height: 50px;
+    position: absolute;
+    left: 50%; top: 208px;
+    transform: translate(-50%,-50%);
+    }
+
+img#faixa-menu{
+    width: 980px;
+    height: 49px;
+    position: absolute;
+    left: 50%; top: 217px;
+    transform: translate(-50%,-50%);
+}
+
+img#logo {
+    position: relative;
+    left: 20%;
+    transform: translate(43%,0%);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px;
+}
+
+nav#menu{
+    display: block;
+    font-family: 'Overlock', cursive;
+    position: absolute;
+    vertical-align: middle;
+    margin-top: 10px;
+    box-shadow: 1px 2px 4px #3f3f3f;
+}
+
+nav#menu a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3ea8c4;
+    color: white;
+    }
+
+nav#menu ul{
+    list-style: none;
+    position: relative;
+    }
+
+nav#menu ul li{
+    width: 196px;
+    float: left;
+}
+
+nav#menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+nav#menu ul li:hover ul{
+    visibility: visible;
+}
+
+nav#menu a:hover{
+    background-color: #166176;
+    transition: background-color .5s;
+}
+
+nav#menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ffffff;
+}
+nav#menu li a.selecionado{
+    background-color: #003d4d;
+}
+
+div#contato h1{
+    position: absolute;
+    left: 1114px;
+    top: 110px;
+    color: #003d4d;
+    font-size: 18pt;
+}
+
+div#contato h2{
+    position: absolute;
+    left: 1071px;
+    top: 150px;
+    color: #003d4d;
+    font-size: 18pt;
+}
+
+a.email:link{
+    color: #003d4d;
+}
+a.email:hover {text-decoration: underline;
+    color:#003d4d;
+    font-size:110%;
+  }
+a.email:visited {
+    color: #4d0040;
+}
+a.email:active {
+    color: #4d0040;
+}
+
+/*------------ Corpo ------------*/
+section#corpo {
+    margin: auto;
+    background-color: #f2f2f2;
+    padding-top: 260px;
+
+    }
+
+div.banner{
+    display: block;
+    margin: auto;
+    width: 933px;
+    height: 461px;
+    animation: slide 10s infinite;
+    position: relative;
+    box-shadow: 5px 5px 5px #000;
+}
+
+div.banner{
+    position: relative;
+}
+div.banner:before, div.banner:after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+div.banner:after{
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+@keyframes slide {
+    0%, 30% {
+        background-image: url("../_imagens/imagem1.jpg");
+
+}
+
+    35%, 65% {
+        background-image: url("../_imagens/imagem2.jpg");
+    }
+
+    70%, 100% {
+        background-image: url("../_imagens/imagem3.jpg");
+    }
+}
+
+/*------------ Rodape ------------*/
+footer#rodape {
+    position: relative;
+    margin-top: 800px;
+    clear: both;
+    border-top: 5px solid #007b9a;
+    box-shadow: -3px 0px 5px black;
+    background-color: #ffffff;
+}
+
+div#contato-rodape {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+}
